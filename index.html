@@ -4,8 +4,9 @@
      <head>
       <script>
        function loadDoc(){
-       const xhttp = new XMHttpRequest();{
-        xhttp.onload.getElementById("demo").innerHML = this.responseText;
+       const xhttp = new XMHttpRequest();
+          xhttp.onload = function(){
+        document.getElementById("demo").innerHML = this.responseText;
        }
        xhttp.open("get", "velha_raposa.txt, true");
        xhttp.send():
